@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_business_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black333"
+            android:textSize="20sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="营业额" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_pecuniary_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black333"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_business_name"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="¥" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_pecuniary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black333"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toEndOf="@+id/tv_pecuniary_unit"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_pecuniary_unit"
+            tools:text="123456465" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_expand_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black333"
+            android:textSize="14sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintTop_toTopOf="@+id/tv_pecuniary"
+            app:layout_constraintStart_toEndOf="@+id/tv_pecuniary"
+            tools:text="环比上一区间" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_section_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black333"
+            android:textSize="14sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintTop_toTopOf="@+id/tv_pecuniary"
+            app:layout_constraintStart_toEndOf="@+id/tv_expand_text"
+            tools:text="+47.23%" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_tendency"
+            android:layout_width="15dp"
+            android:layout_height="19dp"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toEndOf="@+id/tv_section_text"
+            app:layout_constraintTop_toTopOf="@+id/tv_section_text"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_section_text"
+            tools:src="@drawable/arrow" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
