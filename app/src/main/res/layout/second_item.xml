@@ -8,17 +8,17 @@
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="250dp"
-        android:layout_height="150dp"
+        android:layout_width="420dp"
+        android:layout_height="250dp"
         android:background="@drawable/white_board"
-        android:padding="10dp">
+        android:padding="20dp">
 
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tv_second_item_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
+            android:textSize="28sp"
             android:textColor="@color/black111"
             tools:text="支出金额"
             app:layout_constraintTop_toTopOf="parent"
@@ -26,8 +26,8 @@
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/lv_second_item_question"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
             android:src="@drawable/question"
             android:layout_marginStart="3dp"
             app:tint="@color/gray1"
@@ -39,10 +39,10 @@
             android:id="@+id/tv_second_item_money"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="24sp"
+            android:textSize="42sp"
             android:textColor="@color/black111"
             android:textStyle="bold"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="18dp"
             tools:text="174623.23"
             app:layout_constraintTop_toBottomOf="@+id/tv_second_item_title"
             app:layout_constraintStart_toStartOf="@+id/tv_second_item_title" />
@@ -51,9 +51,9 @@
             android:id="@+id/tv_second_item_msg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
+            android:textSize="24sp"
             android:textColor="@color/gray"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="18dp"
             android:text="环比上一区间"
             app:layout_constraintTop_toBottomOf="@+id/tv_second_item_money"
             app:layout_constraintStart_toStartOf="@+id/tv_second_item_money" />
@@ -62,7 +62,7 @@
             android:id="@+id/tv_second_item_section"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
+            android:textSize="24sp"
             android:layout_marginStart="3dp"
             app:layout_constraintStart_toEndOf="@+id/tv_second_item_msg"
             app:layout_constraintBottom_toBottomOf="@+id/tv_second_item_msg"
@@ -71,8 +71,8 @@
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/tv_second_item_tendency"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
+            android:layout_width="24dp"
+            android:layout_height="28dp"
             app:layout_constraintStart_toEndOf="@+id/tv_second_item_section"
             app:layout_constraintBottom_toBottomOf="@+id/tv_second_item_section"
             app:layout_constraintTop_toTopOf="@+id/tv_second_item_section"

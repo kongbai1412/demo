@@ -6,7 +6,13 @@ public class BusinessFirstBean {
 
     private String money;
 
-    private Integer numerical;
+    private Float numerical;
+
+    public BusinessFirstBean(String title, String money, Float numerical) {
+        this.title = title;
+        this.money = money;
+        this.numerical = numerical;
+    }
 
     public String getTitle() {
         return title;
@@ -24,11 +30,11 @@ public class BusinessFirstBean {
         this.money = money;
     }
 
-    public Integer getNumerical() {
+    public Float getNumerical() {
         return numerical;
     }
 
-    public void setNumerical(Integer numerical) {
+    public void setNumerical(Float numerical) {
         this.numerical = numerical;
     }
 }
