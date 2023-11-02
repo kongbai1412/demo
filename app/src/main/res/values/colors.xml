@@ -19,4 +19,5 @@
     <color name="gray2">#EEEDF2</color>
     <color name="blue1">#E4EBFB</color>
     <color name="blue4A">#4A81DE</color>
+    <color name="lucency">#00000000</color>
 </resources>

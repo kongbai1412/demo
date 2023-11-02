@@ -39,14 +39,15 @@ dependencies {
     implementation 'androidx.navigation:navigation-fragment:2.7.4'
     implementation 'androidx.navigation:navigation-ui:2.7.4'
     implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.4'
-//    implementation 'cn.bingoogolapple:bga-badgeview-api:1.1.5'
-//    annotationProcessor "cn.bingoogolapple:bga-badgeview-compiler:1.1.5"
 
     implementation 'cn.bingoogolapple:bga-badgeview:1.0.6@aar'
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
-//    implementation 'com.github.gzu-liyujiang.AndroidPicker:CalendarPicker:3.0.0'
     implementation 'com.applandeo:material-calendar-view:1.7.0'
+    implementation 'com.github.JessYanCoding:AndroidAutoSize:v1.2.1'
+
+    implementation 'com.google.android.material:material:1.5.0'
+
 }

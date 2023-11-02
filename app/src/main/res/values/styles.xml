@@ -1,0 +1,12 @@
+<resources>
+    
+    <style name="newTabLayout">
+        <item name="tabBackground">@drawable/activity_tab_backgroud</item>
+    </style>
+    
+    <style name="tab">
+        <item name="android:textSize">28sp</item>
+    </style>
+
+
+</resources>

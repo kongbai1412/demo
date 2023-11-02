@@ -14,46 +14,76 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent">
+        
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/icon"
+            android:background="@drawable/rounded_corner_background"
+            android:layout_marginTop="20dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center_horizontal"
+            />
+        
+        <cn.bingoogolapple.badgeview.BGABadgeFrameLayout
+            android:id="@+id/bg_call"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            app:badge_gravity="rightTop">
+            
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_call_number"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:drawableTop="@drawable/call"
+                android:background="#00000000"
+                android:text="叫号"
+                android:textColor="@color/gray"
+                android:textSize="14sp"
+                />
+            
+        </cn.bingoogolapple.badgeview.BGABadgeFrameLayout>
+        
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_commodity"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:drawableTop="@drawable/commodity"
+            android:background="#00000000"
+            android:text="商品"
+            android:textColor="@color/gray"
+            android:textSize="14sp"
+            android:layout_marginTop="20dp"
+            />
+        
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/iv_user"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:drawableTop="@drawable/user"
+            android:background="#00000000"
+            android:text="用户"
+            android:textColor="@color/gray"
+            android:textSize="14sp"
+            android:layout_marginTop="20dp"
+            />
 
-<!--    <cn.bingoogolapple.badgeview.BGABadgeTextView-->
-<!--        android:layout_width="30dp"-->
-<!--        android:layout_height="30dp"-->
-
-<!--        android:src="@drawable/user"-->
-<!--        android:layout_gravity="center_horizontal"-->
-<!--        app:badge_bgColor="#FF0000"-->
-<!--        app:badge_gravity="top_right"-->
-<!--        app:badge-->
-<!--        />-->
-
-<!--        <androidx.appcompat.widget.AppCompatImageView-->
-<!--            android:id="@+id/iv_main_icon"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_gravity="center"-->
-<!--            android:src="@drawable/menu" />-->
-
-<!--        <androidx.appcompat.widget.AppCompatImageView-->
-<!--            android:id="@+id/iv_main_icon"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_gravity="center"-->
-<!--            android:src="@drawable/menu" />-->
-
-<!--        <androidx.appcompat.widget.AppCompatImageView-->
-<!--            android:id="@+id/iv_main_icon"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_gravity="center"-->
-<!--            android:src="@drawable/menu" />-->
-
-<!--        <androidx.appcompat.widget.AppCompatImageView-->
-<!--            android:id="@+id/iv_main_icon"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_gravity="center"-->
-<!--            android:src="@drawable/menu" />-->
-
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/iv_wallet"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:drawableTop="@drawable/wallet"
+            android:background="#00000000"
+            android:text="对账"
+            android:textColor="@color/gray"
+            android:textSize="14sp"
+            android:layout_marginTop="20dp"
+            />
+        
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/iv_main_icon"
             android:layout_width="match_parent"
@@ -64,16 +94,27 @@
             android:text="设置"
             android:textColor="@color/gray"
             android:textSize="14sp"
+            android:layout_marginTop="20dp"
             />
     </androidx.appcompat.widget.LinearLayoutCompat>
-
+    
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tl_main"
         android:layout_width="0dp"
-        android:layout_height="80dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="15dp"
+        android:background="#00000000"
+        style="@style/newTabLayout"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toEndOf="@+id/lv_model_menu"
         app:layout_constraintEnd_toEndOf="parent"
+        app:tabGravity="start"
+        app:tabIndicatorHeight="0dp"
+        app:tabMaxWidth="350dp"
+        app:tabMode="scrollable"
+        app:tabTextAppearance="@style/tab"
+        app:tabTextColor="@color/gray"
+        app:tabSelectedTextColor="@color/blue4A"
         />
 
     <FrameLayout

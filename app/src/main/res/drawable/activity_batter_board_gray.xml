@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 设置填充颜色 为白色 -->
+    <!--    <solid android:color="#efdeab" />-->
+
+    <gradient
+        android:startColor="#ffffff"
+        android:endColor="#ffffff"
+        android:type="linear" />
+
+    <!-- 设置几何图形四个角的弧度 -->
+    <corners android:radius="10dp"/>
+
+    <!--设置几何形状绘制边框 红色边框-->
+    <stroke android:color="#9D9D9D"
+        android:width="2dp"/>
+</shape>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/activity_board_tab_backgroud"
+        android:state_selected="true" />
+    <item
+        android:drawable="@drawable/activity_tab_black"
+        android:state_selected="false" />
+</selector>
