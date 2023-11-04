@@ -16,6 +16,7 @@ import com.applandeo.materialcalendarview.builders.DatePickerBuilder;
 import com.applandeo.materialcalendarview.listeners.OnSelectDateListener;
 import com.whb.shangmidemo.adapter.BusinessFirstAdapter;
 import com.whb.shangmidemo.databinding.FragmentFirstBinding;
+import com.whb.shangmidemo.dialog.DatePickerDialog;
 import com.whb.shangmidemo.entity.BusinessFirstBean;
 import com.whb.shangmidemo.utils.GridSpaceItemDecoration;
 import me.jessyan.autosize.internal.CustomAdapt;
@@ -105,8 +106,12 @@ public class FirstFragment extends Fragment implements CustomAdapt {
                 view -> Toast.makeText(requireActivity(), "点击了上月", Toast.LENGTH_SHORT).show());
         binding.btnPrint.setOnClickListener(
                 view -> Toast.makeText(requireActivity(), "点击了打印", Toast.LENGTH_SHORT).show());
+        binding.tvSkipStatement.setOnClickListener(
+                view -> Toast.makeText(requireActivity(), "点击了切换至老版营业报表", Toast.LENGTH_SHORT).show());
         binding.btnCustomize.setOnClickListener(view -> {
-            datePicker.show();
+            DatePickerDialog.getInstance().show(getChildFragmentManager(), "DatePickerDialog");
+
+//            datePicker.show();
         });
     }
     
@@ -130,23 +135,23 @@ public class FirstFragment extends Fragment implements CustomAdapt {
     }
     
     private void initDatePicker() {
-        OnSelectDateListener onSelectDateListener = new OnSelectDateListener() {
-            List<String> dates = new ArrayList<>();
-            
-            @Override
-            public void onSelect(List<Calendar> calendar) {
-                for (Calendar cal : calendar) {
-                    dates.add(cal.getTime().toString());
-                }
-                
-                Toast.makeText(requireActivity(), "点击了" + dates, Toast.LENGTH_SHORT).show();
-            }
-        };
-        
-        DatePickerBuilder builder = new DatePickerBuilder(requireActivity(),
-                onSelectDateListener).setPickerType(CalendarView.RANGE_PICKER);
-        
-        datePicker = builder.build();
+//        OnSelectDateListener onSelectDateListener = new OnSelectDateListener() {
+//            List<String> dates = new ArrayList<>();
+//
+//            @Override
+//            public void onSelect(List<Calendar> calendar) {
+//                for (Calendar cal : calendar) {
+//                    dates.add(cal.getTime().toString());
+//                }
+//
+//                Toast.makeText(requireActivity(), "点击了" + dates, Toast.LENGTH_SHORT).show();
+//            }
+//        };
+
+
+//        DatePickerBuilder builder = new DatePickerBuilder(requireActivity(),
+//                onSelectDateListener).setPickerType(CalendarView.RANGE_PICKER);
+//        datePicker = builder.build();
     }
     
     private List<BusinessFirstBean> initTestData() {

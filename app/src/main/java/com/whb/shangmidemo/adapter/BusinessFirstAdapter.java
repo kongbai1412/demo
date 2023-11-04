@@ -14,7 +14,7 @@ import com.whb.shangmidemo.entity.BusinessFirstBean;
 
 import java.util.Locale;
 
-public class BusinessFirstAdapter extends BaseQuickAdapter<BusinessFirstBean, BaseDataBindingHolder<SecondItemBinding>>{
+public class BusinessFirstAdapter extends BaseQuickAdapter<BusinessFirstBean, BaseDataBindingHolder<SecondItemBinding>> {
 
 
     public BusinessFirstAdapter() {
@@ -37,7 +37,7 @@ public class BusinessFirstAdapter extends BaseQuickAdapter<BusinessFirstBean, Ba
                 binding.tvSecondItemTendency.setImageDrawable(ResourcesCompat.getDrawable(getContext().getResources(), R.drawable.arrow, getContext().getTheme()));
             }
 
-            binding.tvSecondItemSection.setText(String.format(Locale.getDefault(),"%f%%", businessSecondBean.getNumerical()));
+            binding.tvSecondItemSection.setText(String.format(Locale.getDefault(), "%f%%", businessSecondBean.getNumerical()));
         }
 
     }
